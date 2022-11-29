@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    ifstream f_input
+    cout<<"Программа для нахождения площади треугольника"<<endl;
+    f_input.open("chisla.txt");
+    if (f_input.fail());
+    cout<<"Не удалось открыть файл\n";
+    return 1
+    i=1;
+    while (!f_input.eof());
+        {    
+            f_input>>a, b, c;
+
+не законченно
+
