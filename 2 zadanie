@@ -1,4 +1,7 @@
 #include <iostream>
+#include <stdio.h>
+#include <math.h>
+#include <locale.h>
 
 using namespace std;
 
@@ -13,8 +16,32 @@ int main()
     return 1
     i=1;
     while (!f_input.eof());
+    }
         {    
-            f_input>>a, b, c;
+            fscanf(f_input, "%f%f%f", &a, &b, &c);
+            fclose(f_input);
+            f_output=fopen("result.txt");
+            int p1, p2, p3, p4, p5, p6, S1, S2, S3, S4, S5, S6, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12;
+            p1=(a1+a2+a3)/2;
+            S1=sqrt(p*(p-a1)*(p-a2)*(p-a3));
+            p2=(a3+a4+a5)/2;
+            S2=sqrt(p*(p-a3)*(p-a4)*(p-a5));
+            p3=(a5+a6+a7)/2;
+            S3=sqrt(p*(p-a5)*(p-a6)*(p-a7));
+            p4=(a7+a8+a9)/2;
+            S4=sqrt(p*(p-a7)*(p-a8)*(p-a9));
+            p5=(a9+a10+a11)/2;
+            S5=sqrt(p*(p-a9)*(p-a10)*(p-a11));
+            p6=(a11+a12+a1)/2;
+            S6=sqrt(p*(p-a11)*(p-a12)*(p-a1));
+            printf("Результаты площадей : \n\S1\n\S2\n\S3\n\S4\n\S5\n\S6");
+            fclose(f_output);
+            printf("Результат записан в result.txt");
+            return 0;
+            }
+                
+            
+            
 
-не законченно
+
 
